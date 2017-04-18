@@ -22,7 +22,7 @@ use Whoops\Run;
  * bottom of this file.  Then it loads at the start of the plugin.
  */
 
-//add_action( 'init', __NAMESPACE__ . '\load_whoops', 1 );
+add_action( 'init', __NAMESPACE__ . '\load_whoops', 1 );
 /**
  * Load Whoops.
  *
