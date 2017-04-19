@@ -33,7 +33,10 @@ add_action( 'init', __NAMESPACE__ . '\load_whoops', 1 );
 function load_whoops() {
 	$whoops     = new Run();
 	$error_page = new PrettyPageHandler();
-	$error_page->setEditor( 'sublime' );
+	$error_page->setEditor( 'phpstorm' );
+
+	d( $error_page );
+
 	$whoops->pushHandler( $error_page );
 	$whoops->register();
 }
